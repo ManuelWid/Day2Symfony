@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Travel locations{% endblock %}
+
+{% block body %}
+Travel locations:
+{% for location in locations %}
+    <ul>
+        <li>{{ location.id }}</li>
+        <li>{{ location.name }}</li>
+        <li>{{ location.price }}</li>
+    </ul>
+{% endfor %}
+{% endblock %}
